@@ -75,7 +75,7 @@ public class Regex {
         String email = scan.nextLine();
 
         // Provide regex pattern
-        pattern = Pattern.compile("((\\w+[^?*@#$%]{10,}[0]{2})@gmail.com)");
+        pattern = Pattern.compile(".*((\\w{1,}[^?*@#$%][0]{2}){1,10}).*@gmail.com");
 
         match = pattern.matcher(email);
 
